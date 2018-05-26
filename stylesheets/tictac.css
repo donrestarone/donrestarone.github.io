@@ -7,3 +7,11 @@ td {
   height: 300px;
   cursor: pointer;
 }
+
+h2 {
+	text-align: center;	
+}
+
+h1 {
+	text-align: center;		
+}
