@@ -16,37 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event){
 		}
 	}
 
-
-
 	setInterval(function(){
 		instruction.style.display = 'none'
 	}, 650)
 
-
-
-
-
-
-
-	// var looper = setInterval(function(){
-	// 	counter++;
-	// 	// var aBox
-	// 	for (var i=0; i < partialBoxes.length; i++){
-	// 		var aBox = partialBoxes[i]
-	// 		aBox.style.display = 'block';
-	// 	}
-
-
-	// }, 850)
-
-	// setInterval(function(){
-	// 	for (var i=0; i < partialBoxes.length; i++){
-	// 		aBox = partialBoxes[i]
-	// 		aBox.style.display = 'none';
-	// 	}
-	// 	if (counter == 2){
-	// 		clearInterval(looper)
-	// 	}
-	// }, 1200)
 
 });
