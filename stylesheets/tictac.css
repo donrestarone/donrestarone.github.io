@@ -7,3 +7,17 @@ td {
   height: 300px;
   cursor: pointer;
 }
+
+html {
+	background: radial-gradient(ellipse at center, #ebe9f9 0%,#d8d0ef 50%,#cec7ec 51%,#c1bfea 100%);
+}
+
+.container {
+	background: radial-gradient(ellipse at center, #ebe9f9 0%,#d8d0ef 50%,#cec7ec 51%,#c1bfea 100%);
+
+}
+
+td {
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
