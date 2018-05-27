@@ -48,5 +48,7 @@ dd:hover + .box,.box:hover{
     width: 100%;
 }
 /**/
-
+#instruction > p {
+	text-align: center;
+}
 
