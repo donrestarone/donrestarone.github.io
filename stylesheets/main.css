@@ -32,18 +32,21 @@ body {
 
 }
 
-
-.box{
-    display: none;
-    width: 100%;
+.col-sm-9 {
+	text-align: left;
 }
+
+/*breakout div for the main table */
 
 dd:hover + .box,.box:hover{
     display: block;
     position: relative;
     z-index: 100;
 }
-
-.col-sm-9 {
-	text-align: left;
+.box{
+    display: none;
+    width: 100%;
 }
+/**/
+
+
