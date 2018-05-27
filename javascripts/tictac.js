@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event){
-		var tiles = document.querySelectorAll('td');
+	var tiles = document.querySelectorAll('td');
 	var winner = document.querySelector('#winner')
 	var count = 0
 	var winCounter = 0;

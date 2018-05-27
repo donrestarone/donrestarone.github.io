@@ -32,18 +32,48 @@ body {
 
 }
 
-
-.box{
-    display: none;
-    width: 100%;
+.col-sm-9 {
+	text-align: left;
 }
+
+/*breakout div for the main table */
 
 dd:hover + .box,.box:hover{
     display: block;
     position: relative;
     z-index: 100;
 }
-
-.col-sm-9 {
-	text-align: left;
+.box{
+    display: none;
+    width: 100%;
 }
+/**/
+
+
+#instruction > p {
+text-align: center;
+}
+
+/*make the clickable table headings pulsate*/
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+.clickme {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+
+
+
+/**/
+
