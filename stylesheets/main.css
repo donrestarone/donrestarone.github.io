@@ -44,4 +44,8 @@ dd:hover + .box,.box:hover{
     z-index: 100;
 }
 
+.col-sm-9 {
+	text-align: left;
+}
+
 
