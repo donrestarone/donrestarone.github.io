@@ -3,17 +3,28 @@ document.addEventListener("DOMContentLoaded", function(event){
 	var specialities = document.getElementById("specialties");
 	var partialBoxes = document.getElementsByClassName("box");
 
-	var chartTitles = document.getElementsByClassName("col-sm-3");
+	var chartTitles = document.querySelectorAll(".col-sm-3");
 	var instruction = document.getElementById("instruction");
 	if (isMobileDevice()) {
-		var i
-		for (var ii = 0; i < chartTitles.length; i++){
-			chartTitles[ii].addEventListener('click', function(event){
-				for (i= 0; i < partialBoxes.length; i++){
-					partialBoxes[ii].style.display = 'block';
+		chartTitles.forEach(function(title) {
+			title.addEventListener('click', function(event){
+				var box = title.parentElement.querySelector(".box")
+
+				if (box) {
+					box.style.display = "block";
 				}
 			})
-		}
+		})
+		// var i
+		// for (var i = 0; i < chartTitles.length; i++){
+		// 	chartTitles[i].addEventListener('click', function(event){
+		// 		partialBoxes[i].style.display = 'block';
+		// 		// console.log(partialBoxes)
+		// 		// for (i= 0; i < partialBoxes.length; i++){
+		// 		// 	partialBoxes[i].style.display = 'block';
+		// 		// }
+		// 	})
+		// }
 	}
 
 	function isMobileDevice() {
