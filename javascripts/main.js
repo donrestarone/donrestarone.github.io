@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 	var chartTitles = document.getElementsByClassName("col-sm-3");
 	var instruction = document.getElementById("instruction");
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if (isMobileDevice()) {
 		var i
 		for (var ii = 0; i < chartTitles.length; i++){
 			chartTitles[ii].addEventListener('click', function(event){
@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", function(event){
 			})
 		}
 	}
+
+	function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
+	};
+	
+
 
 	setInterval(function(){
 		instruction.style.display = 'none'
