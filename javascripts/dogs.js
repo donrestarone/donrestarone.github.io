@@ -11,32 +11,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		method: 'GET',
 		dataType: 'json',
 	});
-
-	// ** this will show a list of the possible breeds and their sub categories
-	// request.done(function(data){
-	// 	var dogsHash = data["message"];
-		
-	// 	//take the hashes and list the breeds
-	// 	(Object.keys(dogsHash)).forEach(function(breed){
-	// 		var breedLi = document.createElement('li');
-	// 		breedLi.innerText = breed;
-	// 		if (dogsHash[breed].length > 0) {
-	// 			console.log(dogsHash[breed]);
-	// 			subBreedUl = document.createElement('ul');
-				
-	// 			dogsHash[breed].forEach(function(subbreed){
-	// 				subBreedLi = document.createElement('li');
-	// 				subBreedLi.innerText =	subbreed ;
-	// 				subBreedUl.append(subBreedLi);
-	// 			});
-
-	// 			breedLi.append(subBreedUl);
-	// 		}
-
-	// 		ul.append(breedLi);
-	// 	});
-	// });
-
 	// add the breeds to the select tag list
 	var breedList = document.querySelector(".dogbreeds");
 	request.done(function(data){
