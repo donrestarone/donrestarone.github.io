@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cats and dogs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/dogs.js"></script>
+  </head>
+  <body id="body">
+  	
+	<div id="dogs">
+		<h2>For Dogs</h2>
+		<h3>Gender</h3>
+		  <input type="radio" id="temp1" name="gender" value="male"> Male
+		  <input type="radio" id="temp2" name="gender" value="female"> Female
+		<h3>Temperament</h3>
+		  <input type="radio" id="temp1" name="temperament" value="friendly"> Friendly
+		  <input type="radio" id="temp2" name="temperament" value="aloof"> Aloof
+		  <input type="radio" id="temp3" name="temperament" value="aggressive"> Aggressive  
+		  <input type="radio" id="temp4" name="temperament" value="happy"> Happy Go Lucky
+	  	<h3>Colour</h3>
+		  <input type="radio" id="color1" name="color" value="black"> Black
+		  <input type="radio" id="color2" name="color" value="brown"> Brown
+		  <input type="radio" id="color1" name="color" value="white"> White
+		  <input type="radio" id="color3" name="color" value="gold"> Gold  
+		  <input type="radio" id="color4" name="color" value="mixed"> Mixed
+		<h3>Breed</h3>
+			<select name="dogbreeds" class="dogbreeds"></select>
+		<input type="submit" value="get a name!" id="getdogname">
+		<div id="resultName" style="display: none;">
+			<h4>Name</h4>
+			<p id="name"></p>
+		</div>
+		<div id="dogpic" style="display: none;">
+			<h4>picture</h4>
+			<img id="image" src="">
+		</div>
+	</div>
+
+  </body>
+</html>
