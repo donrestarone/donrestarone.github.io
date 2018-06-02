@@ -1,0 +1,11 @@
+.container {
+	background: radial-gradient(ellipse at center, #ffffff 0%,#e5e5e5 100%);
+}
+
+#resultname {
+	background: radial-gradient(ellipse at center, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+}
+
+#dogpic {
+	background: radial-gradient(ellipse at center, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+}
