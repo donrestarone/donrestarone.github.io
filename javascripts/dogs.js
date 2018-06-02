@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function(){
 		}).done(function(response){
 			dogName = (response.name + " " + response.surname);
 			namePtag.innerText = dogName;
+		}).fail(function(error){
+			namePtag.innerText = "Choose gender to generate a name!";
 		});
 		// get a picture
 		var namePtag = document.getElementById("name");
